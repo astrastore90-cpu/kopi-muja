@@ -149,6 +149,25 @@ footer {
   margin-top:30px;
 }
 
+/* FLOATING WA */
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  animation: float 2s ease-in-out infinite;
+}
+
+.floating-wa img {
+  width: 60px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
 @media(max-width:768px){
   .cards { flex-direction:column; align-items:center; }
 }
@@ -158,7 +177,7 @@ footer {
 <body>
 
 <header>
-  <h2> Kopi Muja</h2>
+  <h2>☕ Kopi Muja</h2>
   <nav>
     <a href="#menu">Menu</a>
     <a href="#rating">Rating</a>
@@ -207,17 +226,17 @@ footer {
   <h2>Rating Pelanggan</h2>
   <div class="testimonial">
     <div class="testi-box">
-      <div class="stars"></div>
+      <div class="stars">★★★★★</div>
       <p>"Tempatnya nyaman banget!"</p>
       <b>- Andi</b>
     </div>
     <div class="testi-box">
-      <div class="stars"></div>
+      <div class="stars">★★★★★</div>
       <p>"Kopinya enak dan harga pas."</p>
       <b>- Rina</b>
     </div>
     <div class="testi-box">
-      <div class="stars"></div>
+      <div class="stars">★★★★★</div>
       <p>"Interiornya cozy banget."</p>
       <b>- Budi</b>
     </div>
@@ -237,8 +256,16 @@ footer {
 </section>
 
 <footer>
-  � 2025 Kopi Muja
+  © 2025 Kopi Muja
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="floating-wa"
+   href="https://wa.me/6282279629792"
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp">
+</a>
 
 </body>
 </html>
